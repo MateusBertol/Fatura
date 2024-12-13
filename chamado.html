@@ -1,0 +1,167 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Chamados - IPTV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex">
+  <!-- Sidebar -->
+  <div id="sidebar" class="bg-white w-64 min-h-screen shadow-lg hidden md:block">
+    <div class="flex items-center justify-center py-6">
+      <img alt="Logotipo do IPTV com um design moderno e elegante" class="w-24 h-24" src="https://storage.googleapis.com/a1aa/image/Of2ZZeLLBVgfzJQlQE3UpDVfwqqdy8H796t9WmP17oPdp6pPB.jpg"/>
+    </div>
+    <nav class="mt-10">
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-home mr-2"></i>
+        Dashboard
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-user mr-2"></i>
+        Perfil
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-tv mr-2"></i>
+        Canais
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-list-alt mr-2"></i>
+        Planos
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-calendar-alt mr-2"></i>
+        Assinaturas
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-file-invoice-dollar mr-2"></i>
+        Faturas
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-users mr-2"></i>
+        Listar Clientes
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-user-plus mr-2"></i>
+        Adicionar Cliente
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-cog mr-2"></i>
+        Configurações
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 bg-gray-200" href="#">
+        <i class="fas fa-ticket-alt mr-2"></i>
+        Chamados
+      </a>
+    </nav>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    <!-- Top Bar -->
+    <div id="topbar" class="bg-white shadow-lg py-4 px-6 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">Chamados</h1>
+      </div>
+      <div class="flex items-center">
+        <div class="relative">
+          <input class="w-64 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Pesquisar..." type="text"/>
+          <i class="fas fa-search absolute right-3 top-3 text-gray-500"></i>
+        </div>
+        <div class="ml-6">
+          <img alt="Imagem de perfil do usuário" class="w-10 h-10 rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/AkhY3t7tzkqrA97UherVQY4kHUyfDZLwYO7JGZEk34jyse0nA.jpg" width="100"/>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tickets Content -->
+    <main class="flex-1 p-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+        <h2 class="text-xl font-bold mb-4">Lista de Chamados</h2>
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th class="py-2 px-4 border-b border-gray-200">ID do Chamado</th>
+              <th class="py-2 px-4 border-b border-gray-200">Assunto</th>
+              <th class="py-2 px-4 border-b border-gray-200">Status</th>
+              <th class="py-2 px-4 border-b border-gray-200">Data de Abertura</th>
+              <th class="py-2 px-4 border-b border-gray-200">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-4 border-b border-gray-200">#12345</td>
+              <td class="py-2 px-4 border-b border-gray-200">Problema com o canal Esportes HD</td>
+              <td class="py-2 px-4 border-b border-gray-200">
+                <select class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                  <option value="em_aberto" selected>Em Aberto</option>
+                  <option value="resolvido">Resolvido</option>
+                  <option value="pendente">Pendente</option>
+                </select>
+              </td>
+              <td class="py-2 px-4 border-b border-gray-200">2023-10-01</td>
+              <td class="py-2 px-4 border-b border-gray-200 flex space-x-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600"><i class="fas fa-eye"></i> Visualizar</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600"><i class="fas fa-trash"></i> Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b border-gray-200">#12346</td>
+              <td class="py-2 px-4 border-b border-gray-200">Erro ao acessar o canal Filmes HD</td>
+              <td class="py-2 px-4 border-b border-gray-200">
+                <select class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                  <option value="em_aberto">Em Aberto</option>
+                  <option value="resolvido" selected>Resolvido</option>
+                  <option value="pendente">Pendente</option>
+                </select>
+              </td>
+              <td class="py-2 px-4 border-b border-gray-200">2023-10-02</td>
+              <td class="py-2 px-4 border-b border-gray-200 flex space-x-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600"><i class="fas fa-eye"></i> Visualizar</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600"><i class="fas fa-trash"></i> Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b border-gray-200">#12347</td>
+              <td class="py-2 px-4 border-b border-gray-200">Canal Notícias 24h fora do ar</td>
+              <td class="py-2 px-4 border-b border-gray-200">
+                <select class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                  <option value="em_aberto">Em Aberto</option>
+                  <option value="resolvido">Resolvido</option>
+                  <option value="pendente" selected>Pendente</option>
+                </select>
+              </td>
+              <td class="py-2 px-4 border-b border-gray-200">2023-10-03</td>
+              <td class="py-2 px-4 border-b border-gray-200 flex space-x-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600"><i class="fas fa-eye"></i> Visualizar</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600"><i class="fas fa-trash"></i> Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Function to load HTML content into a div
+    function loadHTML(url, elementId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        });
+    }
+
+    // Load sidebar and topbar
+    loadHTML('sidebar.html', 'sidebar');
+    loadHTML('topbar.html', 'topbar');
+  </script>
+</body>
+</html>
