@@ -36,6 +36,10 @@
         Planos
       </a>
       <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
+        <i class="fas fa-plus mr-2"></i>
+        Criar Plano
+      </a>
+      <a class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200" href="#">
         <i class="fas fa-calendar-alt mr-2"></i>
         Assinaturas
       </a>
