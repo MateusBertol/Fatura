@@ -83,6 +83,16 @@
         <form>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="mb-4">
+              <label class="block text-gray-700 font-medium mb-2" for="site_logo">Logo do Site</label>
+              <div class="flex items-center">
+                <img alt="Logotipo do site" class="w-24 h-24 rounded-full mr-4" src="https://storage.googleapis.com/a1aa/image/Of2ZZeLLBVgfzJQlQE3UpDVfwqqdy8H796t9WmP17oPdp6pPB.jpg"/>
+                <div>
+                  <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" id="site_logo" name="site_logo" type="file"/>
+                  <button class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600" type="button">Remover</button>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
               <label class="block text-gray-700 font-medium mb-2" for="site_name">Nome do Site</label>
               <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="site_name" name="site_name" placeholder="Digite o nome do site" type="text" value="IPTV"/>
             </div>
